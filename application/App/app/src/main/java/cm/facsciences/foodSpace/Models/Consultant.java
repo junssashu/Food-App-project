@@ -3,11 +3,21 @@ package cm.facsciences.foodSpace.Models;
 import java.util.List;
 
 public class Consultant extends GeneralObject {
+
     private int age;
     private String tel;
     private String email;
     private String login;
     private String password;
+
+    public Consultant(int age, String tel, String email, String login, String password, String name) {
+        this.age = age;
+        this.tel = tel;
+        this.email = email;
+        this.login = login;
+        this.password = password;
+        this.setName(name);
+    }
 
     public int getAge() {
         return age;

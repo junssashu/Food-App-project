@@ -6,6 +6,11 @@ public class Admin extends Consultant{
 
     private String grade;
 
+    public Admin(int age, String tel, String email, String login, String password, String name, String grade) {
+        super(age, tel, email, login, password, name);
+        this.grade = grade;
+    }
+
     public void setGrade(String grade) {
         this.grade = grade;
     }

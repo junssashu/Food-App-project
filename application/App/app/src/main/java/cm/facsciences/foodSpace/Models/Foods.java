@@ -7,6 +7,12 @@ public class Foods extends GeneralObject{
     private String Flavour;
     private List<Components> components;
 
+    public Foods(String flavour, List<Components> components, String name) {
+        this.Flavour = flavour;
+        this.components = components;
+        this.setName(name);
+    }
+
     public String getFlavour() {
         return Flavour;
     }

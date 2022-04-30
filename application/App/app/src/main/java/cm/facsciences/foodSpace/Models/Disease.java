@@ -6,7 +6,12 @@ public class Disease extends GeneralObject{
 
     private List<Symptoms> Symptoms;
 
-    public List<cm.facsciences.foodSpace.Models.Symptoms> getSymptoms() {
+    public Disease(List<Symptoms> symptoms, String name) {
+        this.Symptoms = symptoms;
+        this.setName(name);
+    }
+
+    public List<Symptoms> getSymptoms() {
         return Symptoms;
     }
 

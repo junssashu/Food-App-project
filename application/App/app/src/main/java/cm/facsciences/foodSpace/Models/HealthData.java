@@ -3,6 +3,7 @@ package cm.facsciences.foodSpace.Models;
 import java.util.List;
 
 public class HealthData extends GeneralObject {
+
     private List<String> antecedents;
     private List<Disease> Diseases;
 
@@ -30,5 +31,21 @@ public class HealthData extends GeneralObject {
     public boolean delDisease (){
         //code
         return false;
+    }
+
+    public HealthData(List<String> antecedents, List<Disease> diseases, String name) {
+        this.antecedents = antecedents;
+        this.Diseases = diseases;
+        this.setName(name);
+    }
+
+    @Override
+    public void setName(String name) {
+
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 }
