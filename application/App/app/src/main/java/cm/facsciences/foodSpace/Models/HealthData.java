@@ -21,4 +21,14 @@ public class HealthData extends GeneralObject {
     public void setDiseases(List<Disease> diseases) {
         Diseases = diseases;
     }
+
+    public boolean delAntecedents (){
+        //code
+        return false;
+    }
+
+    public boolean delDisease (){
+        //code
+        return false;
+    }
 }
