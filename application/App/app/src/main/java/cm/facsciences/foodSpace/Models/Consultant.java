@@ -1,5 +1,7 @@
 package cm.facsciences.foodSpace.Models;
 
+import java.util.List;
+
 public class Consultant extends GeneralObject {
     private int age;
     private String tel;
@@ -47,12 +49,17 @@ public class Consultant extends GeneralObject {
         this.password = password;
     }
 
-    public void apreciate (Foods food){
+    public  HealthData majHealthData (){
         // code
+        return null;
     }
 
-    public Foods research (Foods food){
+    public HealthData addHealthData (List<String> listOfDisease, List<Disease> disease){
         //code
-        return food;
+        return null;
+    }
+    public boolean delHealthData(){
+        //code
+        return false;
     }
 }
