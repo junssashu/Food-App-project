@@ -1,9 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    
-</LinearLayout>
+    tools:context=".MainActivity"
+    android:background="@drawable/backgraound">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_space"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="@color/mainRed"
+        android:paddingTop="43sp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/appName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/baseLineAppName"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/baseline"
+        android:textSize="12sp"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baseline">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="321.31sp"
+                android:layout_height="147.99sp"
+                android:src="@drawable/logo"
+                android:id="@+id/logoIcon"
+                android:layout_marginTop="77.2sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoIcon"
+                android:id="@+id/designBlock"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="77.8sp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:layout_marginEnd="32sp"
+                        android:src="@drawable/jus"/>
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:layout_marginEnd="32sp"
+                        android:src="@drawable/pommes"/>
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:layout_marginEnd="32sp"
+                        android:src="@drawable/sante"/>
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:src="@drawable/viande"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="14sp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:layout_marginEnd="30sp"
+                        android:src="@drawable/idee"/>
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:layout_marginEnd="30sp"
+                        android:src="@drawable/raisains"/>
+
+                    <ImageView
+                        android:layout_width="46sp"
+                        android:layout_height="46sp"
+                        android:src="@drawable/smile"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="46sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14sp"
+                    android:layout_height="46sp"
+                    android:src="@drawable/ouef"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/designBlock"
+                android:layout_marginTop="73sp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:id="@+id/start"
+                    android:textColor="@color/mainGreen"/>
+
+                <ImageView
+                    android:layout_width="44sp"
+                    android:layout_height="25sp"
+                    android:id="@+id/forward"
+                    android:src="@drawable/forward"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16.5sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
