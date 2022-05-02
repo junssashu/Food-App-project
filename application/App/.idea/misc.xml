@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/drawable/bordure_cardre_inscription.xml" value="0.1" />
+        <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/layout/acceuil.xml" value="0.25" />
         <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/layout/connexion_page.xml" value="0.1" />
         <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/layout/fonts.xml" value="0.2682291666666667" />
+        <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/layout/inscription_page.xml" value="0.22" />
         <entry key="..\:/Projets/2021_2022/L2_Semestre_II/Food-App-project/Food-App-project/application/App/app/src/main/res/layout/personnal_fonts.xml" value="0.2682291666666667" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.298" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.298" />

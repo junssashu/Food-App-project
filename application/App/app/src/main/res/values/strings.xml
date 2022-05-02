@@ -3,4 +3,19 @@
     <string name="food_space">Food Space</string>
     <string name="baseLineAppName">Food recommandation for good care</string>
     <string name="start">Start</string>
+    <string name="inscription">Inscription</string>
+    <string name="baseLineInscription">Register to have full access to food data</string>
+    <string name="nameField">Name</string>
+    <string name="your_name">your name</string>
+    <string name="ageField">Age</string>
+    <string name="emailField">Email</string>
+    <string name="passWordField">Password</string>
+    <string name="vous_avez_d_j_un_compte">Already have an account ?</string>
+    <string name="connecter">Connect</string>
+    <string name="s_inscrire">Register</string>
+    <string name="connexion">Connexion</string>
+    <string name="baseLineConnexion">connect your account to access and have a good meal</string>
+    <string name="loginField">Login</string>
+    <string name="mot_pass_forget">Password forget ?</string>
+    <string name="get_back">Recover</string>
 </resources>
