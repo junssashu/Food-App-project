@@ -18,4 +18,15 @@
     <string name="loginField">Login</string>
     <string name="mot_pass_forget">Password forget ?</string>
     <string name="get_back">Recover</string>
+    <string name="acceuilTitle">Food is nowadays a simple way to take care of our health or to lose it. We all need to control what we eat to be healthy.</string>
+    <string name="foodTitle">Foods</string>
+    <string name="grape">Grapes</string>
+    <string name="glu">glu :</string>
+    <string name="soixanteMg">60 mg</string>
+    <string name="lip">lip :</string>
+    <string name="iro">iro :</string>
+    <string name="min">min :</string>
+    <string name="pro">pro :</string>
+    <string name="oli">oli :</string>
+    <string name="more">More</string>
 </resources>
