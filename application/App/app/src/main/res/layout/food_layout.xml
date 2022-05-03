@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="40sp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="146sp"
+        android:layout_height="146sp"
+        android:src="@drawable/raisains"
+        android:id="@+id/Image_icon"/>
+
+    <RelativeLayout
+        android:layout_toEndOf="@id/Image_icon"
+        android:id="@+id/short_presentation"
+        android:layout_marginTop="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grape"
+            android:id="@+id/food_title"
+            android:textStyle="bold"
+            android:textColor="@color/mainGreen"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/glu"
+            android:id="@+id/glu_name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/food_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/soixanteMg"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/glu_value"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/glu_name"
+            android:layout_below="@id/food_title"/>
+
+        <TextView
+            android:id="@+id/lip_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_title"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@id/glu_value"
+            android:maxLines="1"
+            android:text="@string/lip"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/soixanteMg"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/lip_value"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/lip_name"
+            android:layout_below="@id/food_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/glu_name"
+            android:layout_toEndOf="@id/glu_name"
+            android:id="@+id/iro_name"
+            android:layout_alignParentStart="true"
+            android:text="@string/iro"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/soixanteMg"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/iro_value"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/iro_name"
+            android:layout_below="@id/glu_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/glu_name"
+            android:layout_toEndOf="@id/iro_value"
+            android:id="@+id/min_name"
+            android:layout_marginStart="25sp"
+            android:text="@string/min"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/soixanteMg"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/min_value"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/min_name"
+            android:layout_below="@id/glu_name"/>
+
+        <TextView
+            android:id="@+id/pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/min_name"
+            android:layout_alignParentStart="true"
+            android:layout_toEndOf="@id/min_name"
+            android:text="@string/pro"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/soixanteMg"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/pro_value"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/pro_name"
+            android:layout_below="@id/min_name"/>
+
+        <TextView
+            android:id="@+id/oli_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/min_name"
+            android:layout_marginStart="25sp"
+            android:layout_toEndOf="@id/pro_value"
+            android:text="@string/oli"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/soixanteMg"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/oli_value"
+            android:layout_marginStart="5sp"
+            android:layout_toEndOf="@id/oli_name"
+            android:layout_below="@id/min_name"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginStart="45sp"
+        android:layout_below="@id/short_presentation"
+        android:id="@+id/MoreButton"
+        android:layout_toEndOf="@id/Image_icon"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:textStyle="bold"
+            android:id="@+id/More"
+            android:textColor="@color/mainRed"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="35.12sp"
+            android:layout_height="19.96sp"
+            android:src="@drawable/forward"
+            android:layout_toEndOf="@+id/More"
+            android:layout_marginStart="5sp"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/panier"
+        android:layout_width="20.83sp"
+        android:layout_height="20.13sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="45sp"
+        android:layout_toEndOf="@id/short_presentation"
+        android:src="@drawable/panier" />
+
+    <ImageView
+        android:layout_width="20.83sp"
+        android:layout_height="20.13sp"
+        android:layout_below="@id/panier"
+        android:src="@drawable/hearth"
+        android:layout_marginTop="10sp"
+        android:id="@+id/hearth"
+        android:layout_toEndOf="@id/short_presentation"
+        android:layout_marginStart="10sp"/>
+
+    <ImageView
+        android:layout_width="20.83sp"
+        android:layout_height="20.13sp"
+        android:layout_below="@id/hearth"
+        android:id="@+id/comments"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/commentaires"
+        android:layout_toEndOf="@id/short_presentation"
+        android:layout_marginStart="10sp"/>
+
+</RelativeLayout>

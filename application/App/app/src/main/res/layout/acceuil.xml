@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_top"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="-70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/inscription_background_top" />
+
+    <ImageView
+        android:layout_width="123.32sp"
+        android:layout_height="57.43sp"
+        android:src="@drawable/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21sp"
+        android:layout_marginStart="43sp"
+        android:id="@+id/logoIcon"/>
+
+    <ImageView
+        android:layout_width="32.16sp"
+        android:layout_height="38.89sp"
+        android:src="@drawable/profil"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30sp"
+        android:id="@+id/profil_icon"
+        android:layout_marginEnd="41.2sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acceuilTitle"
+        android:layout_below="@id/logoIcon"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="56sp"
+        android:layout_marginEnd="56sp"
+        android:layout_marginTop="26.6sp"/>
+
+    <ImageView
+        android:layout_width="289.37sp"
+        android:layout_height="353.84sp"
+        android:layout_marginTop="135sp"
+        android:layout_marginStart="-120sp"
+        android:src="@drawable/eclipse_fond_inclinee"/>
+
+    <ImageView
+        android:layout_width="395sp"
+        android:layout_height="483sp"
+        android:layout_below="@id/background_top"
+        android:layout_marginTop="158sp"
+        android:src="@drawable/eclipse_de_fond"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-200sp"/>
+
+    <ImageView
+        android:layout_width="395sp"
+        android:layout_height="483sp"
+        android:layout_below="@id/background_top"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-200sp"
+        android:layout_marginTop="358sp"
+        android:src="@drawable/eclipse_de_fond" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foodTitle"
+        android:layout_below="@id/background_top"
+        android:textStyle="bold"
+        android:id="@+id/food_title"
+        android:textColor="@color/mainRed"
+        android:textSize="30sp"
+        android:layout_marginTop="19sp"
+        android:layout_marginStart="56sp"
+        android:layout_alignParentStart="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_foods"
+        android:layout_below="@id/food_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11sp"/>
+
+</RelativeLayout>
