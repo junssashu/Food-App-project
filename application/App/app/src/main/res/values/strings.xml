@@ -1,6 +1,10 @@
     <resources>
     <string name="app_name">Food Space</string>
+<<<<<<< HEAD
         <string name="api_key">dd3f65acce4d4795bc561ae42992b0fa</string>
+=======
+    <string name="api_key">dd3f65acce4d4795bc561ae42992b0fa</string>
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
     <string name="food_space">Food Space</string>
     <string name="baseLineAppName">Food recommandation for good care</string>
     <string name="start">Start</string>
@@ -30,4 +34,21 @@
     <string name="pro">pro :</string>
     <string name="oli">oli :</string>
     <string name="more">More</string>
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+
 </resources>

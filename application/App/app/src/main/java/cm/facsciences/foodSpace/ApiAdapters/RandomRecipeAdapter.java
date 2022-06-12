@@ -15,6 +15,10 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import cm.facsciences.foodSpace.ApiListeners.RecipeClickListener;
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
 import cm.facsciences.foodSpace.ApiTools.Recipe;
 import cm.facsciences.foodSpace.R;
 
@@ -22,10 +26,21 @@ public class RandomRecipeAdapter extends RecyclerView.Adapter<RandomRecipeViewHo
 
     Context mContext;
     List<Recipe> list;
+<<<<<<< HEAD
 
     public RandomRecipeAdapter(Context context, List<Recipe> list) {
         mContext = context;
         this.list = list;
+=======
+    RecipeClickListener clickListener;
+
+    public RandomRecipeAdapter(Context context, List<Recipe> list, RecipeClickListener clickListener ) {
+        mContext = context;
+        this.list = list;
+        this.clickListener= clickListener;
+
+
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
     }
 
     @NonNull
@@ -42,12 +57,23 @@ public class RandomRecipeAdapter extends RecyclerView.Adapter<RandomRecipeViewHo
         holder.textview_likes.setText(list.get(position).servings+" Servings");
         holder.textview_time.setText(list.get(position).readyInMinutes+" Minutes");
         Picasso.get().load(list.get(position).image).into(holder.ImageView_food);
+<<<<<<< HEAD
+=======
+
+        holder.Random_list_container.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickListener.onRecipeclicked(String.valueOf(list.get(holder.getAdapterPosition()).id));
+            }
+        });
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
     }
 
     @Override
     public int getItemCount() {
         return list.size();
     }
+<<<<<<< HEAD
 }
 
 class RandomRecipeViewHolder extends RecyclerView.ViewHolder {
@@ -67,3 +93,24 @@ class RandomRecipeViewHolder extends RecyclerView.ViewHolder {
     }
 }
 
+=======
+}
+
+class RandomRecipeViewHolder extends RecyclerView.ViewHolder {
+    CardView Random_list_container;
+    TextView textview_title, textview_servings, textview_time, textview_likes;
+    ImageView ImageView_food;
+
+    public RandomRecipeViewHolder(@NonNull View itemView) {
+        super(itemView);
+        Random_list_container= itemView.findViewById(R.id.Random_list_container);
+        textview_likes = itemView.findViewById(R.id.text_view_like);
+        textview_servings =itemView.findViewById(R.id.text_view_servings);
+        textview_time = itemView.findViewById(R.id.text_view_time);
+        textview_title= itemView.findViewById(R.id.textview_title);
+        ImageView_food= itemView.findViewById(R.id.imageview_food);
+
+    }
+}
+
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04

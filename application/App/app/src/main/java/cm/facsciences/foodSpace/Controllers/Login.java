@@ -79,6 +79,8 @@ public class Login extends AppCompatActivity {
                             if (user.getPassword().equals(pwd))
                             {
                                 Toast.makeText(Login.this, "Sign In successfully....", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(new Intent(getApplicationContext(), Acceuil.class));
+                                startActivity(intent);
 
                             }
                             else{

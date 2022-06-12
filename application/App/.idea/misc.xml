@@ -18,10 +18,21 @@
         <entry key="app/src/main/res/layout/acceuil.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_connexion.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+<<<<<<< HEAD
         <entry key="app/src/main/res/layout/connexion_page.xml" value="0.33" />
         <entry key="app/src/main/res/layout/food_layout.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/inscription_page.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/list_random_recipes.xml" value="0.3197463768115942" />
+=======
+        <entry key="app/src/main/res/layout/activity_recipe_details.xml" value="0.3197463768115942" />
+        <entry key="app/src/main/res/layout/connexion_page.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/food_layout.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/inscription_page.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/list_meal_ingredients.xml" value="0.3197463768115942" />
+        <entry key="app/src/main/res/layout/list_random_recipes.xml" value="0.3197463768115942" />
+        <entry key="app/src/main/res/layout/spinner_inner_text.xml" value="0.3197463768115942" />
+        <entry key="app/src/main/res/layout/spinner_text.xml" value="0.3197463768115942" />
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.298" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.298" />
       </map>

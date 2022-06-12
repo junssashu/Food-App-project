@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/background_top"
@@ -12,14 +13,14 @@
         android:src="@drawable/inscription_background_top" />
 
     <ImageView
+        android:id="@+id/logoIcon"
         android:layout_width="123.32sp"
         android:layout_height="57.43sp"
-        android:src="@drawable/logo"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="21sp"
         android:layout_marginStart="43sp"
-        android:id="@+id/logoIcon"/>
+        android:layout_marginTop="21sp"
+        android:src="@drawable/logo" />
 
     <ImageView
         android:layout_width="32.16sp"
@@ -46,18 +47,18 @@
     <ImageView
         android:layout_width="289.37sp"
         android:layout_height="353.84sp"
-        android:layout_marginTop="135sp"
         android:layout_marginStart="-120sp"
-        android:src="@drawable/eclipse_fond_inclinee"/>
+        android:layout_marginTop="135sp"
+        android:src="@drawable/eclipse_fond_inclinee" />
 
     <ImageView
         android:layout_width="395sp"
         android:layout_height="483sp"
         android:layout_below="@id/background_top"
-        android:layout_marginTop="158sp"
-        android:src="@drawable/eclipse_de_fond"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="-200sp"/>
+        android:layout_marginTop="158sp"
+        android:layout_marginEnd="-200sp"
+        android:src="@drawable/eclipse_de_fond" />
 
     <ImageView
         android:layout_width="395sp"
@@ -75,11 +76,60 @@
         android:layout_below="@id/background_top"
         android:layout_alignParentStart="true"
         android:layout_marginStart="56sp"
+<<<<<<< HEAD
         android:layout_marginTop="19sp"
+=======
+        android:layout_marginTop="40sp"
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
         android:text="@string/foodTitle"
         android:textColor="@color/mainRed"
         android:textSize="30sp"
         android:textStyle="bold" />
+<<<<<<< HEAD
+=======
+    
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="230sp"
+        android:layout_marginTop="209dp"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/tags"
+                android:gravity="center"
+                android:textColor="@color/mainGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="160dp"
+        app:cardElevation="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search your recipe...">
+
+        </androidx.appcompat.widget.SearchView>
+    </androidx.cardview.widget.CardView>
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_foods"
@@ -88,6 +138,10 @@
 
         android:layout_below="@id/food_title"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:layout_marginTop="11sp" />
+=======
+        android:layout_marginTop="20sp" />
+>>>>>>> 419cba27d299eab133986b1d4b5e98cc6b241e04
 
 </RelativeLayout>
