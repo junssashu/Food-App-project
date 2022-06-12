@@ -68,17 +68,17 @@
                 android:layout_width="46sp"
                 android:layout_height="46sp"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="20sp"
+                android:layout_marginStart="23dp"
                 android:layout_marginTop="20sp"
                 android:src="@drawable/pommes" />
 
             <ImageView
                 android:layout_width="46sp"
                 android:layout_height="46sp"
-                android:layout_marginTop="20sp"
-                android:src="@drawable/sante"
+                android:layout_centerHorizontal="true"
                 android:layout_marginStart="20sp"
-                android:layout_centerHorizontal="true"/>
+                android:layout_marginTop="20sp"
+                android:src="@drawable/sante" />
 
             <ImageView
                 android:layout_width="46sp"
@@ -163,12 +163,12 @@
                 android:src="@drawable/pommes" />
 
             <RelativeLayout
+                android:id="@+id/central_card"
                 android:layout_width="354sp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/background_apple"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="36sp"
-                android:id="@+id/central_card"
                 android:background="@drawable/bordure_cardre_inscription">
 
                 <TextView
@@ -177,12 +177,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40sp"
                     android:layout_marginTop="35sp"
-                    android:text="@string/nameField"
+                    android:text="Login"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/idname"
                     android:layout_width="241sp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/nameField"
@@ -205,6 +206,7 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/idage"
                     android:layout_width="241sp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/ageField"
@@ -227,11 +229,13 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/idemail"
                     android:layout_width="241sp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/emailField"
                     android:layout_marginStart="14sp"
                     android:layout_toEndOf="@id/emailField"
+                    android:inputType="textEmailAddress"
                     android:minWidth="32dp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
@@ -249,12 +253,13 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/idpwd"
                     android:layout_width="241sp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/passwordField"
                     android:layout_marginStart="14sp"
                     android:layout_toEndOf="@id/passwordField"
-                    android:id="@+id/passwordValueField"
+                    android:inputType="textPassword"
                     android:minWidth="32dp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
@@ -262,10 +267,10 @@
                     android:layout_width="19.69sp"
                     android:layout_height="18sp"
                     android:layout_below="@id/emailField"
-                    android:layout_toEndOf="@id/passwordValueField"
-                    android:src="@drawable/oeil_barre"
+                    android:layout_marginStart="-25sp"
                     android:layout_marginTop="15sp"
-                    android:layout_marginStart="-25sp"/>
+                    android:layout_toEndOf="@id/idpwd"
+                    android:src="@drawable/oeil_barre" />
 
                 <TextView
                     android:id="@+id/dejaCompte"
@@ -280,6 +285,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/loginbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/dejaCompte"
@@ -309,6 +315,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/btn_register"
                         android:layout_width="44sp"
                         android:layout_height="25sp"
                         android:layout_centerVertical="true"
@@ -318,7 +325,15 @@
 
                 </RelativeLayout>
 
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
             </RelativeLayout>
+
 
         </RelativeLayout>
 

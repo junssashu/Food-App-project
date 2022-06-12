@@ -79,6 +79,8 @@ public class Login extends AppCompatActivity {
                             if (user.getPassword().equals(pwd))
                             {
                                 Toast.makeText(Login.this, "Sign In successfully....", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(new Intent(getApplicationContext(), Acceuil.class));
+                                startActivity(intent);
 
                             }
                             else{
@@ -89,6 +91,7 @@ public class Login extends AppCompatActivity {
                         else{
                             mDialog.dismiss();
                             Toast.makeText(Login.this, "User don't exist ....", Toast.LENGTH_SHORT).show();
+
                         }
                     }
 

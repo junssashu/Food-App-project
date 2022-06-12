@@ -1,4 +1,4 @@
-package cm.facsciences.foodSpace.Models;
+package cm.facsciences.foodSpace.ApiTools;
 
 import java.util.ArrayList;
 

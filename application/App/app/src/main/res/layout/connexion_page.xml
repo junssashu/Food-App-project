@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <ImageView
         android:id="@+id/background_top"
         android:layout_width="match_parent"
@@ -74,10 +75,10 @@
             <ImageView
                 android:layout_width="46sp"
                 android:layout_height="46sp"
-                android:layout_marginTop="20sp"
-                android:src="@drawable/sante"
+                android:layout_centerHorizontal="true"
                 android:layout_marginStart="20sp"
-                android:layout_centerHorizontal="true"/>
+                android:layout_marginTop="20sp"
+                android:src="@drawable/sante" />
 
             <ImageView
                 android:layout_width="46sp"
@@ -182,11 +183,14 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/idlogin"
                     android:layout_width="241sp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/loginField"
                     android:layout_marginStart="14sp"
                     android:layout_toEndOf="@id/loginField"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
                     android:minWidth="32dp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
@@ -204,12 +208,14 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/passwordValueField"
+                    android:id="@+id/idpwd"
                     android:layout_width="241sp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/passwordField"
-                    android:layout_marginStart="14sp"
+                    android:layout_marginStart="62dp"
                     android:layout_toEndOf="@id/passwordField"
+                    android:imeOptions="actionSend"
+                    android:inputType="textPassword"
                     android:minWidth="32dp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
@@ -219,7 +225,7 @@
                     android:layout_below="@id/loginField"
                     android:layout_marginStart="-25sp"
                     android:layout_marginTop="15sp"
-                    android:layout_toEndOf="@id/passwordValueField"
+                    android:layout_toEndOf="@id/idpwd"
                     android:src="@drawable/oeil_barre" />
 
                 <TextView
@@ -236,6 +242,7 @@
                     tools:ignore="SmallSp" />
 
                 <TextView
+                    android:id="@+id/recoverid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@id/dejaCompte"
@@ -259,12 +266,13 @@
                         android:id="@+id/s_inscrire"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/s_inscrire"
+                        android:text="Login "
                         android:textColor="@color/mainGreen"
                         android:textSize="30sp"
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/loginBtn"
                         android:layout_width="44sp"
                         android:layout_height="25sp"
                         android:layout_centerVertical="true"

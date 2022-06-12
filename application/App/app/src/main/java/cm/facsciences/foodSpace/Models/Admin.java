@@ -8,8 +8,8 @@ public class Admin extends Consultant{
 
     private String grade;
 
-    public Admin(int id, String name, int age, String tel, String email, String login, String password, String grade, Integer sex) {
-        super(id, name, age, tel, email, login, password, sex);
+    public Admin(String name, String age, String tel, String email, String login, String password, String grade, Integer sex) {
+        super(email, password, age);
         this.grade = grade;
     }
 
