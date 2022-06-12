@@ -1,4 +1,4 @@
-package cm.facsciences.foodSpace.Models;
+package cm.facsciences.foodSpace.ApiTools;
 
 public class Measures {
     public Us us;

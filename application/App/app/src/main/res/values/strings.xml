@@ -1,5 +1,6 @@
-<resources>
+    <resources>
     <string name="app_name">Food Space</string>
+        <string name="api_key">dd3f65acce4d4795bc561ae42992b0fa</string>
     <string name="food_space">Food Space</string>
     <string name="baseLineAppName">Food recommandation for good care</string>
     <string name="start">Start</string>

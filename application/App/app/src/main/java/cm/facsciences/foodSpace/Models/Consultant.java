@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Consultant extends GeneralObject {
-    private int id;
-    private int age;
+
+    private String age;
     private String tel;
     private String email;
     private String login;
@@ -16,22 +16,17 @@ public class Consultant extends GeneralObject {
     private Consultant person;
 
 
-    public Consultant(int id, String name, int age, String tel, String email, String login, String password, Integer sex) {
-        super(name);
-        this.id=id;
-        this.age = age;
-        this.tel = tel;
-        this.email = email;
-        this.login = login;
+    public Consultant(String Email, String password, String age) {
+        this.email= Email;
         this.password = password;
-        this.sex=sex;
+        this.age= age;
     }
 
 
 
-    public int getId() { return id; }
 
-    public int getAge() {
+
+    public String getAge() {
         return age;
     }
 
@@ -53,7 +48,7 @@ public class Consultant extends GeneralObject {
         return password;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -75,7 +70,7 @@ public class Consultant extends GeneralObject {
 
     public void setSex(int sex) { this.sex = sex; }
 
-    public void setId(int id) { this.id = id; }
+
 
     public  HealthData majHealthData (){
         // code
@@ -97,7 +92,7 @@ public class Consultant extends GeneralObject {
      */
     public JSONArray convertToJsonArray(){
 
-        person = new Consultant(id,getName(),age,tel, email, login,password,sex);
+        person = new Consultant(getName(),password, age);
 
         List laliste = new ArrayList();
         laliste.add(person);

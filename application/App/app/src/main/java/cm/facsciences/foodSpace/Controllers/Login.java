@@ -89,6 +89,7 @@ public class Login extends AppCompatActivity {
                         else{
                             mDialog.dismiss();
                             Toast.makeText(Login.this, "User don't exist ....", Toast.LENGTH_SHORT).show();
+
                         }
                     }
 

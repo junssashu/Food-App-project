@@ -69,24 +69,25 @@
         android:src="@drawable/eclipse_de_fond" />
 
     <TextView
+        android:id="@+id/food_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/foodTitle"
         android:layout_below="@id/background_top"
-        android:textStyle="bold"
-        android:id="@+id/food_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56sp"
+        android:layout_marginTop="19sp"
+        android:text="@string/foodTitle"
         android:textColor="@color/mainRed"
         android:textSize="30sp"
-        android:layout_marginTop="19sp"
-        android:layout_marginStart="56sp"
-        android:layout_alignParentStart="true"/>
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_foods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list_foods"
+
         android:layout_below="@id/food_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11sp"/>
+        android:layout_marginTop="11sp" />
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package cm.facsciences.foodSpace.Models;
+package cm.facsciences.foodSpace.ApiTools;
 
 public class Temperature {
     public double number;

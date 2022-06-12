@@ -1,4 +1,4 @@
-package cm.facsciences.foodSpace;
+package cm.facsciences.foodSpace.Controllers;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -21,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import cm.facsciences.foodSpace.Models.Consultant;
+import cm.facsciences.foodSpace.R;
 
 public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
@@ -91,7 +92,8 @@ public class Register extends AppCompatActivity {
                             Consultant user = new Consultant (mEmail.getText().toString(), mPwd.getText().toString(), mAge.getText().toString());
                             table_user.child(mName.getText().toString()).setValue(user);
                             Toast.makeText(Register.this, "Sign up successful!....", Toast.LENGTH_SHORT).show();
-                            finish();
+                            Intent intent = new Intent(new Intent(getApplicationContext(), Acceuil.class));
+                            startActivity(intent);
                         }
                     }
                     @Override
