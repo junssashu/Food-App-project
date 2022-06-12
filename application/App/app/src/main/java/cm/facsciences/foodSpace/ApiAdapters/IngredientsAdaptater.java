@@ -41,7 +41,7 @@ public class IngredientsAdaptater extends RecyclerView.Adapter<IngredientViewhol
         holder.text_View_ingredient_quantity.setText(list.get(position).original);
         Picasso.get().load("https://spoonacular.com/cdn/ingredients_100x100/"+list.get(position).image).into(holder.image_View_ingredients);
     }
-
+ 
     @Override
     public int getItemCount() {
         return list.size();
