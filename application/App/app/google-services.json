@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696775239778",
+    "firebase_url": "https://databasefood-12e03-default-rtdb.firebaseio.com",
+    "project_id": "databasefood-12e03",
+    "storage_bucket": "databasefood-12e03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696775239778:android:b68e0046fa35513a0c493b",
+        "android_client_info": {
+          "package_name": "cm.facsciences.foodSpace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696775239778-rclma8nnlijabn8a791ic266nvt3pfp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcoeKmWFQ1iI_-lNNu_HrmhjlSlALz3a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696775239778-rclma8nnlijabn8a791ic266nvt3pfp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/background_top"
+        android:layout_width="match_parent"
+        android:layout_height="234sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/inscription_background_top" />
+
+    <ImageView
+        android:layout_width="12sp"
+        android:layout_height="25sp"
+        android:src="@drawable/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39sp"
+        android:id="@+id/back_button"
+        android:layout_marginTop="45sp"/>
+
+    <ImageView
+        android:layout_width="123.32sp"
+        android:id="@+id/main_logo"
+        android:layout_height="57.43sp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28.785sp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/background_top"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="421.62sp"
+                android:layout_height="534.19sp"
+                android:layout_marginStart="71.92sp"
+                android:layout_marginEnd="-51.92sp"
+                android:paddingTop="60sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/inscription_background_middle" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/inscription_background_circle"
+                android:layout_marginStart="-20sp"
+                android:layout_marginTop="180sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70sp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/inscription_background_circle"/>
+
+            <ImageView
+                android:id="@+id/background_apple"
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/pommes" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/sante" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/raisains"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20sp"/>
+
+            <ImageView
+                android:id="@+id/background_juice"
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/background_apple"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-20sp"
+                android:layout_marginTop="120sp"
+                android:src="@drawable/jus" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/background_apple"
+                android:layout_marginTop="120sp"
+                android:src="@drawable/viande"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-20sp"/>
+
+            <ImageView
+                android:id="@+id/background_raisin"
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/central_card"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="52sp"
+                android:src="@drawable/raisains" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/central_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52sp"
+                android:src="@drawable/viande" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/central_card"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="52sp"
+                android:layout_marginEnd="20sp"
+                android:src="@drawable/smile" />
+
+            <ImageView
+                android:id="@+id/background_oeuf"
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/background_raisin"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="100sp"
+                android:src="@drawable/ouef" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/background_raisin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
+                android:src="@drawable/jus" />
+
+            <ImageView
+                android:layout_width="46sp"
+                android:layout_height="46sp"
+                android:layout_below="@id/background_raisin"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="100sp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="50sp"
+                android:src="@drawable/pommes" />
+
+            <RelativeLayout
+                android:id="@+id/central_card"
+                android:layout_width="354sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/background_apple"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36sp"
+                android:background="@drawable/bordure_cardre_inscription">
+
+                <TextView
+                    android:id="@+id/nameField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginTop="35sp"
+                    android:text="Login"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/idname"
+                    android:layout_width="241sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/nameField"
+                    android:layout_marginStart="14sp"
+                    android:layout_toEndOf="@id/nameField"
+                    android:minWidth="32dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/ageField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameField"
+                    android:layout_alignEnd="@id/nameField"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginTop="7.5sp"
+                    android:text="@string/ageField"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/idage"
+                    android:layout_width="241sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/ageField"
+                    android:layout_marginStart="14sp"
+                    android:layout_toEndOf="@id/nameField"
+                    android:minWidth="32dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/emailField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ageField"
+                    android:layout_alignEnd="@id/nameField"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginTop="7.5sp"
+                    android:text="@string/emailField"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/idemail"
+                    android:layout_width="241sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/emailField"
+                    android:layout_marginStart="14sp"
+                    android:layout_toEndOf="@id/emailField"
+                    android:inputType="textEmailAddress"
+                    android:minWidth="32dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/passwordField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailField"
+                    android:layout_alignEnd="@id/nameField"
+                    android:layout_marginStart="1sp"
+                    android:layout_marginTop="7.5sp"
+                    android:text="@string/passWordField"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/idpwd"
+                    android:layout_width="241sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/passwordField"
+                    android:layout_marginStart="14sp"
+                    android:layout_toEndOf="@id/passwordField"
+                    android:inputType="textPassword"
+                    android:minWidth="32dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:layout_width="19.69sp"
+                    android:layout_height="18sp"
+                    android:layout_below="@id/emailField"
+                    android:layout_marginStart="-25sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_toEndOf="@id/idpwd"
+                    android:src="@drawable/oeil_barre" />
+
+                <TextView
+                    android:id="@+id/dejaCompte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/passwordField"
+                    android:layout_marginStart="9sp"
+                    android:layout_marginTop="10.5sp"
+                    android:text="@string/vous_avez_d_j_un_compte"
+                    android:textColor="@color/mainRed"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/loginbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/dejaCompte"
+                    android:layout_marginStart="5sp"
+                    android:layout_toEndOf="@id/dejaCompte"
+                    android:text="@string/connecter"
+                    android:textColor="@color/mainGreen"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dejaCompte"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="30sp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/s_inscrire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/s_inscrire"
+                        android:textColor="@color/mainGreen"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/btn_register"
+                        android:layout_width="44sp"
+                        android:layout_height="25sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="3sp"
+                        android:layout_toEndOf="@id/s_inscrire"
+                        android:src="@drawable/forward" />
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inscription"
+        android:textStyle="bold"
+        android:textColor="@color/mainRed"
+        android:textSize="60sp"
+        android:id="@+id/page_title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_logo"
+        android:layout_marginTop="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/baseLineInscription"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/page_title"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

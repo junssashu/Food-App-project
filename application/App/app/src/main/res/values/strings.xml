@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Food Space</string>
+    <string name="api_key">dd3f65acce4d4795bc561ae42992b0fa</string>
+    <string name="food_space">Food Space</string>
+    <string name="baseLineAppName">Food recommandation for good care</string>
+    <string name="start">Start</string>
+    <string name="inscription">Inscription</string>
+    <string name="baseLineInscription">Register to have full access to food data</string>
+    <string name="nameField">Name</string>
+    <string name="your_name">your name</string>
+    <string name="ageField">Age</string>
+    <string name="emailField">Email</string>
+    <string name="passWordField">Password</string>
+    <string name="vous_avez_d_j_un_compte">Already have an account ?</string>
+    <string name="connecter">Connect</string>
+    <string name="s_inscrire">Register</string>
+    <string name="connexion">Connexion</string>
+    <string name="baseLineConnexion">connect your account to access and have a good meal</string>
+    <string name="loginField">Login</string>
+    <string name="mot_pass_forget">Password forget ?</string>
+    <string name="get_back">Recover</string>
+    <string name="acceuilTitle">Food is nowadays a simple way to take care of our health or to lose it. We all need to control what we eat to be healthy.</string>
+    <string name="foodTitle">Foods</string>
+    <string name="grape">Grapes</string>
+    <string name="glu">glu :</string>
+    <string name="soixanteMg">60 mg</string>
+    <string name="lip">lip :</string>
+    <string name="iro">iro :</string>
+    <string name="min">min :</string>
+    <string name="pro">pro :</string>
+    <string name="oli">oli :</string>
+    <string name="more">More</string>
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+
+</resources>
