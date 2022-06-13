@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:text="dessert"
     android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/mainRed"
     android:padding="8dp">
 
 </TextView>

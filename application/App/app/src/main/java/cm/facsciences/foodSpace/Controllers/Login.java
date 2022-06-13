@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,14 +23,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import cm.facsciences.foodSpace.MainActivity;
 import cm.facsciences.foodSpace.Models.Consultant;
 import cm.facsciences.foodSpace.R;
 
 public class Login extends AppCompatActivity {
 
     EditText mLogin, mPwd;
-    ImageView mLoginBtn;
+    RelativeLayout mLoginBtn;
     TextView mRecover;
+    ImageView backButton, showPassword;
+
 
 
 
@@ -42,7 +46,14 @@ public class Login extends AppCompatActivity {
         mPwd = findViewById(R.id.idpwd);
         mLoginBtn = findViewById(R.id.loginBtn);
         mRecover = findViewById(R.id.recoverid);
+<<<<<<< HEAD
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
+=======
+        backButton = findViewById(R.id.back_button);
+        showPassword = findViewById(R.id.hidePassword);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+>>>>>>> 5d6515f7757617a37b07328ce3415c12ba6538b2
         final DatabaseReference table_user = database.getReference("user");
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -111,6 +122,12 @@ public class Login extends AppCompatActivity {
 
         });
 
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
 
     }
 

@@ -14,7 +14,6 @@ public class Recipe {
     public boolean lowFodmap;
     public int weightWatcherSmartPoints;
     public String gaps;
-    public int preparationMinutes;
     public int cookingMinutes;
     public int aggregateLikes;
     public int healthScore;
