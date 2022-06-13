@@ -42,7 +42,7 @@ public class Login extends AppCompatActivity {
         mPwd = findViewById(R.id.idpwd);
         mLoginBtn = findViewById(R.id.loginBtn);
         mRecover = findViewById(R.id.recoverid);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference table_user = database.getReference("user");
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -71,21 +71,16 @@ public class Login extends AppCompatActivity {
                 table_user.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-
+                        Consultant user = snapshot.child(login).getValue(Consultant.class);
                         if (snapshot.child(login).exists()){
-
                             mDialog.dismiss();
-                            Consultant user = snapshot.child(login).getValue(Consultant.class);
-                            if (user.getPassword().equals(pwd))
-                            {
-                                Toast.makeText(Login.this, "Sign In successfully....", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(new Intent(getApplicationContext(), Acceuil.class));
-                                startActivity(intent);
-
+                            if(user.getPassword().equals(pwd)) {
+                                Toast.makeText(Login.this, "Sign In successfully...", Toast.LENGTH_SHORT).show();
+                                Intent signIn = new Intent(Login.this, Acceuil.class);
+                                startActivity(signIn);
                             }
-                            else{
-                                mDialog.dismiss();
-                                Toast.makeText(Login.this, "Sign In unsuccessfully....", Toast.LENGTH_SHORT).show();
+                            else {
+                                Toast.makeText(Login.this, "Wrong Password!!!!!", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{

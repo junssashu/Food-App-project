@@ -46,7 +46,7 @@ public class Acceuil extends AppCompatActivity {
         ArrayAdapter arrayAdapter= ArrayAdapter.createFromResource(this, R.array.tags, R.layout.spinner_text);
         arrayAdapter.setDropDownViewResource(R.layout.spinner_inner_text);
         spinner.setAdapter(arrayAdapter);
-        spinner.setOnItemSelectedListener(spinnerSelectedListenner);
+        spinner.setOnItemSelectedListener(spinnerSelectedListener);
         manager = new RequestManager(this);
         mSearchView = findViewById(R.id.searchView);
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -88,7 +88,7 @@ public class Acceuil extends AppCompatActivity {
         }
     };
 
-    private final AdapterView.OnItemSelectedListener spinnerSelectedListenner = new AdapterView.OnItemSelectedListener() {
+    private final AdapterView.OnItemSelectedListener spinnerSelectedListener = new AdapterView.OnItemSelectedListener() {
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
             tags.clear();
@@ -107,7 +107,7 @@ public class Acceuil extends AppCompatActivity {
         @Override
         public void onRecipeclicked(String id) {
             startActivity(new Intent(Acceuil.this, RecipeDetailsActivity.class)
-                    .putExtra("id", id ));
+                    .putExtra("id", id));
 
         }
     };

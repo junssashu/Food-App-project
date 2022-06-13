@@ -60,31 +60,32 @@ public class RequestManager {
         );
 
     }
-    public void getRecipeDetails(RecipeDetailsListerner listerner, int id){
-        callRecipeDetails callRecipeDetails = mRetrofit.create(RequestManager.callRecipeDetails.class);
+    private  interface  callRecipeDetails{
+        @GET("recipes/{id}/information")
+        Call <RecipeDetailsResponse> callRecipeDetails(
+                @Path("id") int id,
+                @Query("apiKey") String apiKey
+        );
+    }
+    public void getRecipeDetails(RecipeDetailsListerner  listener, int id){
+        callRecipeDetails callRecipeDetails = mRetrofit.create(callRecipeDetails.class);
         Call<RecipeDetailsResponse> call = callRecipeDetails.callRecipeDetails(id, mContext.getString(R.string.api_key));
         call.enqueue(new Callback<RecipeDetailsResponse>() {
             @Override
             public void onResponse(Call<RecipeDetailsResponse> call, Response<RecipeDetailsResponse> response) {
                 if(!response.isSuccessful()){
-                    listerner.didError(response.message());
+                    listener.didError(response.message());
                     return;
                 }
-                listerner.didFetch(response.body(), response.message());
+                listener.didFetch(response.body(), response.message());
             }
 
             @Override
             public void onFailure(Call<RecipeDetailsResponse> call, Throwable t) {
-                listerner.didError(t.getMessage());
+                listener.didError(t.getMessage());
             }
         });
     }
 
-    private  interface  callRecipeDetails{
-        @GET("recipes/{id}/information")
-        Call <RecipeDetailsResponse> callRecipeDetails(
-                @Path("id") int id,
-                @Query("apikey") String apikey
-        );
-    }
+
 }

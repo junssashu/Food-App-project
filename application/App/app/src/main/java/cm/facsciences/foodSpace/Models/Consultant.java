@@ -11,18 +11,18 @@ public class Consultant extends GeneralObject {
     private String tel;
     private String email;
     private String login;
-    private String password;
+    private String Password;
     private int sex;
     private Consultant person;
 
-
-    public Consultant(String Email, String password, String age) {
-        this.email= Email;
-        this.password = password;
-        this.age= age;
+    public Consultant() {
     }
 
-
+    public Consultant(String Email, String Password, String age) {
+        this.email= Email;
+        this.Password = Password;
+        this.age= age;
+    }
 
 
 
@@ -45,7 +45,7 @@ public class Consultant extends GeneralObject {
     public int getSex() { return sex; }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
     public void setAge(String age) {
@@ -64,8 +64,8 @@ public class Consultant extends GeneralObject {
         this.login = login;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
 
     public void setSex(int sex) { this.sex = sex; }
@@ -92,7 +92,7 @@ public class Consultant extends GeneralObject {
      */
     public JSONArray convertToJsonArray(){
 
-        person = new Consultant(getName(),password, age);
+        person = new Consultant(getName(),Password, age);
 
         List laliste = new ArrayList();
         laliste.add(person);

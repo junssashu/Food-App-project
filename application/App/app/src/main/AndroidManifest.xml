@@ -14,9 +14,12 @@
         <activity
             android:name=".RecipeDetailsActivity"
             android:exported="false" />
-        <activity android:name=".Controllers.Acceuil" />
-        <activity android:name=".Controllers.Login"></activity>
-        <activity android:name=".Controllers.Register" />
+        <activity android:name=".Controllers.Acceuil"
+            android:exported="true"/>
+        <activity android:name=".Controllers.Login"
+            android:exported="false"/>
+        <activity android:name=".Controllers.Register"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
