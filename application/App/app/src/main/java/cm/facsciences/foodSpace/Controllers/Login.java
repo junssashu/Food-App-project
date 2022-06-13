@@ -46,14 +46,10 @@ public class Login extends AppCompatActivity {
         mPwd = findViewById(R.id.idpwd);
         mLoginBtn = findViewById(R.id.loginBtn);
         mRecover = findViewById(R.id.recoverid);
-<<<<<<< HEAD
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-=======
         backButton = findViewById(R.id.back_button);
         showPassword = findViewById(R.id.hidePassword);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
->>>>>>> 5d6515f7757617a37b07328ce3415c12ba6538b2
         final DatabaseReference table_user = database.getReference("user");
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {

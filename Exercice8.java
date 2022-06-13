@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 
 // Solution
-public class Solution {
+public class Exercice8 {
 	static InputStream is;
 	static PrintWriter out;
 	static String INPUT = "";
