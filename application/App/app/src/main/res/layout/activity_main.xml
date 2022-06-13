@@ -141,14 +141,15 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/idstart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/designBlock"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="73sp">
+                android:layout_marginTop="73sp"
+                android:onClick="envoyer">
 
                 <TextView
-                    android:id="@+id/start"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/start"
@@ -157,12 +158,10 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:id="@+id/idstart"
                     android:layout_width="37dp"
                     android:layout_height="21dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="16.5sp"
-                    android:onClick="envoyer"
                     android:src="@drawable/forward" />
 
             </LinearLayout>

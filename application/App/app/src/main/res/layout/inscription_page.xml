@@ -14,14 +14,14 @@
         android:src="@drawable/inscription_background_top" />
 
     <ImageView
+        android:id="@+id/back_button"
         android:layout_width="12sp"
         android:layout_height="25sp"
-        android:src="@drawable/back"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="39sp"
-        android:id="@+id/back_button"
-        android:layout_marginTop="45sp"/>
+        android:layout_marginTop="45sp"
+        android:src="@drawable/back" />
 
     <ImageView
         android:layout_width="123.32sp"
@@ -252,6 +252,16 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <ImageView
+                    android:layout_width="19.69sp"
+                    android:id="@+id/masquerpassword"
+                    android:layout_height="18sp"
+                    android:layout_below="@id/emailField"
+                    android:layout_marginStart="-25sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_toEndOf="@id/idpwd"
+                    android:src="@drawable/oeil_barre" />
+
                 <EditText
                     android:id="@+id/idpwd"
                     android:layout_width="241sp"
@@ -262,15 +272,6 @@
                     android:inputType="textPassword"
                     android:minWidth="32dp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-                <ImageView
-                    android:layout_width="19.69sp"
-                    android:layout_height="18sp"
-                    android:layout_below="@id/emailField"
-                    android:layout_marginStart="-25sp"
-                    android:layout_marginTop="15sp"
-                    android:layout_toEndOf="@id/idpwd"
-                    android:src="@drawable/oeil_barre" />
 
                 <TextView
                     android:id="@+id/dejaCompte"
@@ -298,6 +299,7 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
+                    android:id="@+id/btn_register"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/dejaCompte"
                     android:layout_centerHorizontal="true"
@@ -315,7 +317,6 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/btn_register"
                         android:layout_width="44sp"
                         android:layout_height="25sp"
                         android:layout_centerVertical="true"

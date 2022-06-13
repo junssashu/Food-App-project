@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import cm.facsciences.foodSpace.MainActivity;
 import cm.facsciences.foodSpace.Models.Consultant;
 import cm.facsciences.foodSpace.R;
 
@@ -28,7 +30,8 @@ public class Register extends AppCompatActivity {
     EditText mName, mEmail, mPwd, mAge;
     FirebaseAuth fAuth = FirebaseAuth.getInstance();
     TextView loginBtn;
-    ImageView registerBtn;
+    RelativeLayout registerBtn;
+    ImageView backButton, masquerPassword;
 
 
     @Override
@@ -43,6 +46,8 @@ public class Register extends AppCompatActivity {
         mAge         = findViewById(R.id.idage);
         loginBtn    = findViewById(R.id.loginbutton);
         registerBtn = findViewById(R.id.btn_register);
+        backButton = findViewById(R.id.back_button);
+        masquerPassword = findViewById(R.id.masquerpassword);
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference table_user= database.getReference("user");
@@ -104,7 +109,6 @@ public class Register extends AppCompatActivity {
             }
         });
 
-
         loginBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -113,7 +117,15 @@ public class Register extends AppCompatActivity {
                     }
                 });
 
-
-
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(intent);
             }
-        }
+        });
+
+        // manque encore que je gere le passwird avec le camoufflage
+
+    }
+}
